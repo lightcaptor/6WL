@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="A library of all combinations of a limited number of English words.">
+        <meta name="author" content="moonlit-daydream.deviantart.com">
+        
+        <title>SixWordLibrary</title>
+        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+        <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="code.js"></script>
+    </head>
+    <body>
+        <div id="logo" class='center'><img src="logo.png" height="100" width="100" ></div>
+        <h1 id="title" class='center'>The Library of Six Word Stories</h1>
+        <br>
+        <div id="loading" class='center'>Please wait while the page loads...</div>
+        <div id="welcome" class='center' style='display:none;'>Welcome to the library of six word stories.</div>
+        <br>
+        <noscript class='center'>In order to use this library, you must enable javascript in your browser.</noscript>
+       
+        <div id="selection" style='display:none;'>
+            <ul class='center'>
+                <li class='menu' id = "about" onclick = "menupress('about')"><span class="menuspan">About</span></li>
+                <li class='menu' id = "search" onclick = "menupress('search')"><span class="menuspan">Search</span></li>
+                <li class='menu' id = "random" onclick = "menupress('random')"><span class="menuspan">Random</span></li>
+                <li class='menu' id = "lookup" onclick = "menupress('lookup')"><span class="menuspan">Lookup</span></li>
+                <li class='menu' id = "info" onclick = "menupress('info')"><span class="menuspan">Info</span></li>
+            </ul>
+        </div>
+    </body>
+</html>
