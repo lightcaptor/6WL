@@ -1,14 +1,12 @@
 
-var KEY     ='AIzaSyCIgsuz2ChPmvvwZgIOB4D0x9obSnitSpk';
-var file1   = "0B_H_JyuY3R5EZXktOFRBSkNCOTg";    //1000MEDIA.txt
-var file2   = "0B_H_JyuY3R5EYWZCcVJPYm1CMm8";     //2000POETRY.txt
-var file3   = "0B_H_JyuY3R5EdlFCWldBYjJlUVk";   //5000BNC.txt
-var file4   = "0B_H_JyuY3R5ESW14RG9wcXpWOGs";   //10000GUT.txt
-var file5   = "0B_H_JyuY3R5EeEwwV1hvb09Kd3M";   //40000MEDIA.txt
-var file6   = "0B_H_JyuY3R5ELTRiLUdWbFU1aWs";   //80000PLUS.txt
-var file7   = "0B_H_JyuY3R5EX182SkZuMnFRWTg";   //600000PLUS.txt
-var url     ='https://www.googleapis.com/drive/v3/files/';
-var tag     ='?alt=media&key=';
+var file1   = "https://raw.githubusercontent.com/lightcaptor/6WL/master/1000MEDIA.txt";
+var file2   = "https://raw.githubusercontent.com/lightcaptor/6WL/master/2000POETRY.txt";
+var file3   = "https://raw.githubusercontent.com/lightcaptor/6WL/master/5000BNC.txt";
+var file4   = "https://raw.githubusercontent.com/lightcaptor/6WL/master/10000GUT.txt";
+var file5   = "https://raw.githubusercontent.com/lightcaptor/6WL/master/40000MEDIA.txt";
+var file6   = "https://raw.githubusercontent.com/lightcaptor/6WL/master/80000PLUS.txt";
+var file7   = "https://raw.githubusercontent.com/lightcaptor/6WL/master/600000PLUS.txt";
+
 var bookselected='book1';
 var BOOK = [];
 var pagekey=0;
@@ -62,7 +60,7 @@ var infoHTML = "Info <a onclick=\"closebutton('info')\" class=\"exit\">✖</a>"+
 function downloadFile(fileID, callback) {
 
     var xhr = new XMLHttpRequest();
-    xhr.open('GET',url+fileID+tag+KEY,true);
+    xhr.open('GET',fileID,true);
     xhr.onload = function() {
       callback(xhr.responseText.split("\n"),fileID);
       console.log("XMLHttpRequest Success");
