@@ -1,0 +1,192 @@
+body {
+    font-family: 'Inconsolata','Lucida Console', monospace;
+    font-size:16px;
+    color: #5E4302;
+    background: #F8ECC2; /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(right, #EBCB94, #F8ECC2); 
+    background: -o-linear-gradient(left, #EBCB94, #F8ECC2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, #EBCB94, #F8ECC2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to left, #EBCB94 , #F8ECC2); /* Standard syntax */
+}
+
+#logo {
+    height:100px; width:100px;
+    padding: 10px;
+}
+
+#title {
+    color:#5E4302;
+    text-decoration: underline;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.exit{
+    position:absolute;
+    top:-2px;
+    right:2px;
+}
+
+a{
+    cursor:pointer;
+}
+a:hover{
+    opacity:.6;
+}
+
+.menuspan {
+    vertical-align: -2em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width:300px;
+}
+
+.menu {
+    float: none;   
+    width:300px;
+    height:5em;
+    display: inline-block;
+    background-color: #755527;
+    border: 2px solid #755527;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    margin-bottom:5px;
+}
+
+.menu:hover {
+    cursor:pointer;
+    color: #5E4302;
+    background-color:white;
+}
+
+#bookbox {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height:30px;
+    border: none;
+    border-radius: 4px;
+    background-color: #F8ECC2;
+    text-align:center;
+    padding:10px 1px;
+}
+.book {
+    display:block;
+    font-family: 'Inconsolata','Lucida Console', monospace;
+    font-size:16px;
+    margin-left:0;
+    padding-top:5px;
+    width: 325px;
+    height:30px;
+    color:#5E4302;
+    border-radius: 4px;
+    background-color: #F8ECC2;
+    position:relative;
+    cursor:pointer;
+    overflow:hidden;
+    z-index:10;
+}
+#bookselection{
+    height:30px;
+}
+.options {
+    display:block;
+    font-family:inherit;
+    margin-left:10px;
+    width: 320px;
+    height:30px;
+    color:#5E4302;
+    border: none;
+    border-radius: 4px;
+    background-color: #F8ECC2;
+    cursor:pointer;
+    position:relative;
+}
+.options:hover{
+    background-color:  #755527;
+    color:white;
+}
+#dropbutton{
+    display: block;
+    position:relative;
+    margin-left: 88%;
+    margin-top: -35px;
+}
+
+textarea {
+    display:block;
+    font-family: 'Inconsolata','Lucida Console', monospace;
+    font-size:16px;
+    padding-top:20px;
+    left:20px;
+    width: 350px;
+    box-sizing: content-box;
+    border-radius: 4px;
+    border: none;
+    background-color: #F8ECC2;
+    color: #5E4302;
+    resize:none;
+    overflow:hidden;
+    position:relative;
+    z-index:2;
+}
+#text{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10px;
+    width: 420px;
+    height: 60px;
+    box-sizing: content-box;
+    border-radius: 4px;
+    border: none;
+    background-color: #F8ECC2;
+    position:relative;
+    z-index:2;
+}
+
+input[type=button] {
+    font-family: 'Inconsolata','Lucida Console', monospace;
+    font-size:16px;
+    height:30px;
+    width:30px;
+    border-radius: 4px;
+    border: 2px solid  #755527;
+    background-color: #755527;
+    color: white;
+    cursor: pointer;
+    z-index:100;
+}
+#searchbutton{
+    display:block;
+    position:relative;
+    margin-top:-42px;
+    margin-left:90%;
+}
+
+input[type=button]:hover {
+    background-color: white;
+    color: #755527;
+}
+
+.container {
+    width:500px;
+    min-height:5em;
+    line-height:150%;
+    margin-bottom:5px;
+    border:2px solid #755527;
+    border-radius: 4px;
+    position:relative;
+    left:-100px;
+    background:white;
+}
